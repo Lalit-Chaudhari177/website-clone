@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Website</title>
+
+    <script src="/Practice css/js/respwebsite.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Castoro:ital@1&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
+
+
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0px;
+
+        }
+
+        .nav-list {
+            width: 70%;
+            /* background-color: rgb(10, 10, 14);*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .nav-list li {
+            list-style: none;
+            padding: 25px 15px;
+        }
+
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav-list li a:hover {
+            color: red;
+        }
+
+        .logo {
+            display: flex;
+            width: 14%;
+            align-items: center;
+            justify-content: center;
+            margin: 0px;
+
+        }
+
+        .logo img {
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+            border: 3px solid rgb(199, 199, 175);
+            border-radius: 2px;
+
+        }
+
+        .rightnav {
+            width: 50%;
+            /*background-color: brown;*/
+            text-align: right;
+            /*use for put search bar to right */
+            padding: 0px 23px;
+
+        }
+
+        #search {
+            padding: 4px;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin-top: 1px;
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+
+        .btn {
+            padding: 6px 15px;
+            border: 1px solid rgba(255, 251, 251, 0.904);
+            margin-right: 2px;
+            cursor: pointer;
+            margin: 7px 0.5px;
+            font-family: 'Baloo 2', cursive;
+            border-radius: 2px;
+            background: none;
+            color: white;
+        }
+
+        .btn-sm {
+            padding: 1px 1px;
+            margin-right: 0px;
+            margin-left: -2px;
+            font-size: 12px;
+            vertical-align: middle;
+        }
+
+        .background {
+            background: rgba(10, 10, 10, 0.7) url('https://www.wallpapertip.com/wmimgs/180-1806102_city-building-wallpaper-full-hd-building-background.jpg');
+            background-size: cover;
+            background-blend-mode: darken;
+        }
+
+        .boxmain {
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+            color: rgba(255, 255, 255, 0.925);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            max-width: 50%;
+            margin: auto;
+            height: 90%;
+        }
+
+        .firstsection {
+            height: 100vh;
+
+        }
+
+        .firsthalf {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        .secondhalf {
+            width: 30%;
+        }
+
+        .secondhalf img {
+            width: 87%;
+            border: 3px solid maroon;
+            display: block;
+            margin: auto;
+            border-radius: 100px;
+        }
+
+        .textbig {
+            font-size: 55px;
+            font-family: 'Castoro', serif;
+
+
+        }
+
+        .textsmall {
+            font-size: 22px;
+            font-family: 'Baloo 2', cursive;
+        }
+
+        .sec1 {
+            display: flex;
+            /*  height: 709 px;*/
+            align-items: center;
+            justify-content: space-evenly;
+            margin: auto;
+            width: 60%;
+            flex-direction: column;
+        }
+
+        .macimg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .macimg img {
+            width: 100%;
+            height: 400 px;
+            border: 2px solid rgb(214, 155, 214);
+            padding: 1px;
+            border-radius: 15px;
+        }
+
+        .paras {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .imgmid {
+            align-items: center;
+            justify-content: center;
+            padding: 0px 0px;
+        }
+
+        .paras1 {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .imgmid1 {
+            align-items: center;
+            justify-content: center;
+            padding: 0px 0px;
+
+        }
+
+        .pro {
+            margin-top: 50px;
+        }
+
+        .contact {
+
+            justify-content: center;
+            align-items: center;
+
+            /*border: 1px solid black ;
+  /*  background-color: thistle;*/
+            margin-top: 100px;
+            height: 90vh;
+            max-width: 60%;
+            margin-left: 20%;
+
+        }
+
+        .text-center {
+
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding: 6px;
+            font-family: 'Castoro', serif;
+            font-size: 32px;
+        }
+
+        .form {
+            margin: 20px auto;
+            max-width: 62%;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .forminput {
+            margin: 11px 0;
+            width: 100%;
+            padding: 3px 5px;
+            border: 2px solid gray;
+            font-size: 15px;
+            border-radius: 3px;
+
+        }
+
+        .btn-dark {
+            color: black;
+            border: 2px solid gray;
+            padding: 1px 5px;
+
+        }
+
+        .copytag {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+
+        .background1 {
+            background-color: rgba(0, 0, 0, 0.527);
+            color: white;
+        }
+
+        .burger {
+            display: none;
+            position: absolute;
+            cursor: pointer;
+            right: 5%;
+            top: 6px;
+        }
+
+        .line {
+            width: 33px;
+            height: 4px;
+            background-color: white;
+            margin: 3px 3px;
+        }
+
+        @media only screen and (max-width:1200px) {
+            .nav-list {
+                flex-direction: column;
+            }
+
+            .navbar {
+                flex-direction: column;
+                transition: all 0.5s ease-out;
+                height: 350px;
+
+            }
+
+            .rightnav {
+                text-align: center;
+            }
+
+            #search {
+                width: 100%;
+            }
+
+            .burger {
+                display: block;
+            }
+
+            .hnav {
+                height: 50px;
+            }
+
+            .vis {
+                opacity: 0;
+            }
+
+            .boxmain {
+                flex-direction: column-reverse;
+                max-width: 100%;
+            }
+
+            .contact {
+                margin-left: 25%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar background hnav">
+        <ul class="nav-list another vis">
+            <div class="logo"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf_4PhO9fy33g3JCkyIKuLgeuedliEM9UGLQ&usqp=CAU"
+                    alt="logo"></div>
+            <li><a href="HOME">HOME</a></li>
+            <li><a href="ABOUT">ABOUT</a></li>
+            <li><a href="SERVICES">SERVICES</a></li>
+            <li><a href="CONTACT US">CONTACT US</a></li>
+        </ul>
+        <div class="rightnav vis">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">search </button>
+        </div>
+
+        <div class="burger" onclick="myfunction()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+    </nav>
+
+    <section class="background firstsection">
+        <div class="boxmain">
+            <div class="firsthalf">
+                <p class="textbig">Think Different.</p>
+                <p class="textsmall">Apple Inc. is an American multinational technology company headquartered in
+                    Cupertino, California, that designs, develops and sells consumer electronics, computer software, and
+                    online services.</p>
+                <div class="buttons">
+                    <button class="btn">Learn more</button>
+                    <button class="btn">Buy now</button>
+                </div>
+            </div>
+            <div class="secondhalf">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJcAAACXCAMAAAAvQTlLAAAAVFBMVEX///9mZmZgYGBjY2NdXV38/Pzn5+daWlrx8fHf39+rq6v19fVubm5paWm0tLScnJy8vLyWlpbOzs58fHyjo6OMjIxzc3PHx8fY2NiDg4NVVVVPT09ssxvzAAAFDklEQVR4nO2ci3LjKgyGjQBj4/v9su//ngenaTaJSVtkVLxn8s/O7HQmnXwVspAEchS99dY/rCSt9ZL3MjTHo2bd5UKBqM7EldXjCpwZwZm4pkVcoM7FlQ7qk4oxoUPjfKrNgbHTccle8DsspurQRBdlvWAPWtvQSJuy4QmL/clCMxnJ6hmLraGZootvPWPBEBrKqN5hMTiB20+ww+JjHJoqike+N1f4aC+HvbnYnzk0ls25GC9CU0Vxvl9FxqfQWNE+RBisIXhQTfdUJqamobGs5hJVaKooscWIJQmNFU17c3ERPqRG+/2a8RPsQNl+GVUZGspo3mFBeJ+PLLFeVMEj1yYtzmgt4/YPWzaHOngWcZFs7rlgPEWpET1yQVGFD6dX3bg4wJCeYw03yUYBgBLFok8Q4+/UNkZ6Sk8RHL6VzJJNWUa5sjJua611pcv2J2sl46mshm7szL+h0fVMYcokLQdQSolN5j/WfLlkSVo3zHwY+FUgzE9L6XmZk3op1GOtA5uLv0hGW90VAizpmCqGyR9Z2q/KUlGY9EoxPT+FqmSuuBK2j1/RoPQT3LKysCTINzTW3VstLjv++tPXX+k8bAay5eq771l53yYyyuJpWV9b6u431uFwjNP8J18k+NjoYRSWctsqMR4rwuPlG2P9RQPxk7/g9vH1SL4Rdz81gLsOdJ9mRodlKl6NtJitaeRTgOtcxDmltTatKDBbL8uvMJ1Ek09RY5lw0TlvShOtb10Eytn1U5dghMVCRP2G3rmUds8sbI1Sz1gFYvPOOupVBIbJKTT1s4g7a7B1/vxiCVQ6UVJ7F0clhuTepXoMlu3syatgwSUSDfUy4nLVmJhK4FaRfBmRvXNJvAVhT0DIgxeyEtr3u70Kfb5W0+5B6LMGy3GKVy7suR9tsOcFsjjLKKkO3PEgjqpo92qJoxf2FL4mjvbYPk5Jy5VjH0dNzIVtyL25/h9c/Um5zmovYi50/CLmQvYuybnQ+yNxvIcGyUW8P3KGzL+I8wkmkBtkSlwNYe+8J9QtpgVZDxW0XAyQh48LdTcH+UTabi96FbJSI65r0Q0K4j4Aw3qY9TKxXy5UvzBbyA2G6q/KivwIBpftUFeQRpwjnknqnWgTYKI+dcNwk+jcL8MQd8A+BO59Q+pU5wpWuPpYXPzCQhrnzx3jK3Wn/Aa2Nm5VG/l52qegcyqPYuoc7CauutbB/+mvdNwE4HBXwTISQQfmcK8pIc8p/oq7+D550nqTW+OcPjn8lGOD+rc8nzvuk/QXTj7kWubS3zi5ynWTfB4joZF7MUl+bPvB5Z5Q/8YmCYN7ZfQbBkN1NekNhiskE/JHUuBaO9QxDONdmyRxy4lje/m0uyT2nk5Em1bwET9OQRkrxJEZ15aMC+v0V1GtJC+OTXhkI80zeWgVN800WM3hebWSoA/Mcw+jTRQptY8p19j7Pulp3jy1TMAdkcCeQT7Lb8fV4zsWfPo+R18J2Ev6uwLMc5+vh5GVJ4tx9EWFF2C7l1Q9fBuHy3wrGH05sMKZ77fDyP6lxQTkg67nJMuSudbNyK3DpZsAff3rKzDbyOU2XthM8V3Pz8CVnbIOHYqO5OUw8/i0lsYwY28N3Vld5fAUXTijelFTrNdbiOVcqFy/nuOW8TRcxqRvf0PR0s2Wx2VXKOPeindN/W0ckpMeRnaZ+i6WifZdBsZ7+qExXv6zrzHeNtV1/a+8NuCtt97a6z9QYUzlCJrDIQAAAABJRU5ErkJggg=="
+                    alt="Apple img">
+            </div>
+        </div>
+    </section>
+
+    <section class="sec1 pro">
+        <div class="paras">
+            <h1 class="imgmid textbig">MacBook Air</h1>
+
+        </div>
+        <div class="macimg">
+            <figure>
+                <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/macbook-air-og-202011?wid=1200&hei=630&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1604278672000"
+                    alt="macbook air">
+
+                <figcaption class="textsmall">Our thinnest, lightest notebook, completely transformed by the Apple M1
+                    chip. CPU speeds up to 3.5x faster.
+                    GPU speeds up to 5x faster. Our most advanced Neural Engine for up to 9x faster machine learning.
+                    The
+                    longest battery life ever in a MacBook Air. And a silent, fanless design. This much power has never
+                    been
+                    this ready to go. <h2 class="price">Price: $1799*</h2>
+                </figcaption>
+            </figure>
+
+        </div>
+    </section>
+
+    <section class="sec1 pro">
+        <div class="paras">
+            <h1 class="imgmid1 textbig">MacBook Pro</h1>
+
+        </div>
+        <div class="macimg">
+            <figure>
+                <img src="https://www.apple.com/v/macbook-pro-13/f/images/overview/hero_endframe__bsza6x4fldiq_large.jpg"
+                    alt="macbook-pro-13">
+
+                <figcaption class="textsmall">The Apple M1 chip gives the 13‑inch MacBook Pro speed and power beyond
+                    belief. With up to 2.8x CPU performance. Up to 5x the graphics speed. Our most advanced Neural
+                    Engine for up to 11x faster machine learning. And up to 20 hours of battery life — the longest of
+                    any Mac ever. It’s our most popular pro notebook, taken to a whole new level.
+                    <h2 class="price">Price: $1999*</h2>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h1 class="text-center">Contact Us</h1>
+        <div class="form">
+            <input class="forminput" type="text" name="name" id="name" placeholder="Enter your Name">
+            <input class="forminput" type="text" name="phone" id="phone" placeholder="Enter your Phone No">
+            <input class="forminput" type="email" name="email" id="email" placeholder="Enter your Email">
+            <textarea class="forminput" name="text" id="textarea" cols="30" rows="10">Elaborate Your Concern</textarea>
+            <button class="btn btn-dark">Submit</button>
+        </div>
+    </section>
+    <hr>
+    <footer class="background1">
+        <p class=copytag>
+            Copyright &copy;2020 SemiApple.com- All rights reserved.
+        </p>
+    </footer>
+    <script>
+        function myfunction() {
+            burger = document.querySelector('.burger')
+            navbar = document.querySelector('.navbar')
+            rightnav = document.querySelector('.rightnav')
+            navlist = document.querySelector('.nav-list')
+            burger.addEventListener('click', () => {
+                rightnav.classList.toggle('vis');
+                navlist.classList.toggle('vis')
+                navbar.classList.toggle('hnav')
+            })
+        }
+    </script>
+</body>
+
+
+</html>
